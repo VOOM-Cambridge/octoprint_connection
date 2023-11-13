@@ -1,0 +1,10 @@
+version: "2"
+
+services:
+    printer_connection:
+        build: .
+        privileged: true
+        working_dir: /app
+        volumes:
+            - ./config:/app/config
+            - ./data:/app/data

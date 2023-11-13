@@ -1,0 +1,31 @@
+[constant]
+update_frequency = 10 #seconds
+record_file_name = 1
+record_progress = 1
+record_status = 1
+record_material_use = 1
+record_material_estimate = 1
+
+[mqtt]
+broker = "129.169.214.223"
+port = 1883
+
+[[printer]]
+name = "Printer_1"
+ipAdress = "http://129.169.48.158/"
+APIkey = "98F54849507345F08511781BF299A933"
+
+[[printer]]
+name = "Printer_2"
+ipAdress = "http://129.169.48.160/"
+APIkey = "1334E22C325E483CA02F0D9AE135B383"
+
+[[printer]]
+name = "Printer_3"
+ipAdress = "http://129.169.48.159/"
+APIkey = "701A0A06854C4F218B57F905C47BE7F7"
+
+[[printer]]
+name = "Printer_4"
+ipAdress = ""
+APIkey = ""

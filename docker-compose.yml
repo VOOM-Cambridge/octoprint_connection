@@ -1,0 +1,20 @@
+version: '2'
+
+services:
+    printer_connection:
+        extends:
+            file: octoprintConnection/app.yml
+            service: printer_connection
+        networks:
+            internal:
+                aliases:
+                    - print-connection.docker.local
+        # logging:
+        #         driver: syslog
+        #         options:
+        #                 tag: docker-print-connection
+        restart: unless-stopped
+networks:
+    internal:
+        name: 3DPrinting
+        external: true
